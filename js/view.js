@@ -24,7 +24,7 @@ function printOneItem(item, dom) {
     button.classList.add("botonCompra");
     button.textContent = 'Agregar al carrito';
     const icon = document.createElement('i')
-    icon.classList.add("fa-regular", "fa-cart-shopping")
+    icon.classList.add()
     button.append(icon)
     figure.appendChild(img)
     article.append(figure, texto, button)
