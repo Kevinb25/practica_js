@@ -1,0 +1,121 @@
+main {
+    background-image: url(../assets/images/depositphotos_205251712-stock-illustration-closeup-purple-textured-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+figure {
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.texto {
+    margin-top: 1rem;
+    background-image: url(../assets/images/depositphotos_205251712-stock-illustration-closeup-purple-textured-background.jpg);
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    color: white;
+
+}
+
+#items {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+
+
+        article {
+            text-align: center;
+            border: 2px solid black;
+            padding: 2rem;
+            background-color: beige;
+            border-radius: 2rem;
+
+            h3 {
+
+                font-size: 2.4rem;
+
+            }
+
+        }
+    }
+}
+
+.texto li {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+
+}
+
+ul:last-child {
+    margin-bottom: 0.5rem;
+}
+
+.pkm {
+    background-image: url(../assets/images/dcaa0722-3140-4330-b16e-c91ac036df3d.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.db {
+    background-image: url(../assets/images/HD-wallpaper-gogeta-dragon-ball-thumbnail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.marvel {
+    background-image: url(../assets/images/891be2c0c1824c5a74cd665835b38471.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.botonCompra {
+    border-radius: 50px;
+    color: white;
+    background-color: gray;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    border: 3px solid black;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.botonCompra:hover {
+    background-color: white;
+    color: gray;
+    transition: 1s ease;
+
+}
+
+.botonCompra:active+.db {
+    transform: rotate();
+}
+
+@media(min-width: 768px) {
+    #items .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1004px) {
+    #items .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
