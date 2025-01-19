@@ -1,27 +1,108 @@
+header {
+    background-image: url(../assets/images/360_F_170932733_VOHGeaH5AjrVCXBVryEwVgwhArv2wNNH.jpg);
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logoTexto {
+    display: flex;
+    align-items: center;
+
+
+    img {
+        max-width: 100px;
+        height: auto;
+        border: 2px solid white;
+        border-radius: 50%;
+
+
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: white;
+        margin-left: 3rem;
+
+
+    }
+}
+
+.containerInput {
+    margin-left: 8rem;
+    display: flex;
+    align-items: center;
+
+
+    input {
+
+        border-radius: 6px;
+        text-align: center;
+        border: 2px solid gray;
+
+    }
+}
+
+.containerNav {
+    display: flex;
+    list-style: none;
+
+
+    li {
+        margin: 0.8rem;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+
+        spam {
+            display: none;
+        }
+
+
+        i {
+            font-size: 1.2rem;
+        }
+    }
+}
+
 main {
     background-image: url(../assets/images/depositphotos_205251712-stock-illustration-closeup-purple-textured-background.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
-figure {
+main figure {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid black;
+    border-radius: 2rem;
+
 }
 
-img {
-    width: 100%;
+main img {
+    max-width: 100%;
     height: auto;
     display: block;
-    border: 2px solid black;
-    border-radius: 2rem;
+
+
     object-fit: cover;
 }
 
 .texto {
     margin-top: 1rem;
     background-image: url(../assets/images/depositphotos_205251712-stock-illustration-closeup-purple-textured-background.jpg);
-    border: 3px solid black;
+    /*  border: 3px solid black; */
     border-radius: 20px;
     padding: 1rem;
     color: white;
