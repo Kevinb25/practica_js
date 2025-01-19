@@ -1,6 +1,6 @@
 header {
     background-image: url(../assets/images/360_F_170932733_VOHGeaH5AjrVCXBVryEwVgwhArv2wNNH.jpg);
-    padding: 10px 20px;
+    padding: 8px 10px;
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid black;
@@ -14,7 +14,7 @@ header {
 
 }
 
-.logoTexto {
+.logo {
     display: flex;
     align-items: center;
 
@@ -28,18 +28,10 @@ header {
 
     }
 
-    h1 {
-        font-size: 3rem;
-        color: white;
-        margin-left: 3rem;
-
-
-    }
 }
 
-.containerInput {
-    margin-left: 8rem;
-    display: flex;
+.containerInputYTexto {
+
     align-items: center;
 
 
@@ -48,6 +40,16 @@ header {
         border-radius: 6px;
         text-align: center;
         border: 2px solid gray;
+
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: white;
+        margin-left: 1.2rem;
+        margin-bottom: 1rem;
+
+
 
     }
 }
@@ -198,5 +200,26 @@ ul:last-child {
 @media(min-width: 1004px) {
     #items .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    header {
+        .containerInputYTexto {
+            display: flex;
+            gap: 10rem;
+            justify-content: flex-start;
+
+            h1 {}
+        }
+
+        .containerNav li {
+
+            display: inline;
+
+            spam {
+                display: contents;
+            }
+
+        }
     }
 }
