@@ -59,6 +59,7 @@ header {
     list-style: none;
 
 
+
     li {
         margin: 0.8rem;
         text-decoration: none;
@@ -73,15 +74,23 @@ header {
 
         i {
             font-size: 1.2rem;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }
 
 main {
+    position: relative;
     background-image: url(../assets/images/depositphotos_205251712-stock-illustration-closeup-purple-textured-background.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
+    height: 100%;
 }
 
 main figure {
@@ -167,29 +176,86 @@ ul:last-child {
     background-position: center;
 }
 
-.botonCompra {
-    border-radius: 50px;
-    color: white;
+.botonAgregar {
+    margin-top: 1.2rem;
     background-color: gray;
-    margin-top: 1rem;
     font-size: 1.4rem;
+    color: white;
     padding: 0.6rem;
     border: 3px solid black;
-    font-weight: bold;
-    cursor: pointer;
+    border-radius: 25px;
+
 
 }
 
-.botonCompra:hover {
+.botonAgregar:hover {
     background-color: white;
     color: gray;
     transition: 1s ease;
 
 }
 
-.botonCompra:active+.db {
-    transform: rotate();
+.carrito {
+    position: fixed;
+    right: 1rem;
+    top: 9rem;
+    width: 15.8rem;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.589);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transform: translateX(1004px);
+    border: 3px solid black;
+    border-radius: 20px;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
+
+.mostrarCarrito {
+    transform: translateX(0);
+    transition: 1s;
+}
+
+.cerrarCarrito {
+
+    transform: translateX(1004px);
+
+}
+
+.botonCompra {
+    background-color: gray;
+    font-size: 1.4rem;
+    color: white;
+    padding: 0.6rem;
+    border: 3px solid black;
+    border-radius: 25px;
+
+
+}
+
+.botonCerrar {
+    background-color: gray;
+    font-size: 1.4rem;
+    color: white;
+    padding: 0.6rem;
+    border: 3px solid black;
+    border-radius: 25px;
+
+
+}
+
+
+
 
 @media(min-width: 768px) {
     #items .grid {

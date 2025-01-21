@@ -9,7 +9,7 @@
     <script src="./js/data.js"></script>
 
 </head>
-<header>
+<header id="header">
 
     <div class="container">
         <div class="logo">
@@ -25,16 +25,19 @@
         <div class="containerInputYTexto">
             <h1>Impre3D</h1>
             <form id="busqueda">
-                <input type="text" placeholder="Que estas buscando?" name="busqueda">
-                <input type="submit" value="Buscar">
+                <input type="text" id="searchInput" placeholder="Que estas buscando?" name="busqueda">
+                <button type="submit"> Buscar</button>
             </form>
         </div>
         <div class="containerNav">
             <nav>
                 <ul>
-                    <li><i class="fa-solid fa-cart-shopping"></i>
-                        <spam>Carrito</spam>
+
+                    <li class="btnCarrito"> <a href="#"><i class="fa-solid fa-cart-shopping"></i>
+                            <spam>Carrito</spam>
+                        </a>
                     </li>
+
                     <li><i class="fa-solid fa-user"></i>
                         <spam>Usuario</spam>
                     </li>
@@ -45,10 +48,18 @@
     </div>
 </header>
 <main>
+    <div class="carrito">
+        <h2>Tu Carrito</h2>
+        <div class="botones">
+            <button class="botonCompra">Comprar</button>
+            <button class="botonCerrar">Cerrar</button>
+        </div>
+    </div>
+
     <section id="items">
         <div class="grid">
 
-
+        </div>
     </section>
 </main>
 <footer>

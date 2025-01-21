@@ -1,9 +1,21 @@
 const sectionGrid = document.querySelector('#items .grid');
+const buttonAbrir = document.querySelector('.btnCarrito')
+const carrito = document.querySelector('.carrito')
+const cerrarCarrito = document.querySelector('.botonCerrar')
 
 
+buttonAbrir.addEventListener("click", mostrar)
 
+function mostrar() {
+    carrito.classList.add('mostrarCarrito')
 
+}
 
+cerrarCarrito.addEventListener("click", cerrar)
+
+function cerrar() {
+    carrito.classList.remove('mostrarCarrito')
+}
 
 function printOneItem(item, dom) {
     const article = document.createElement('article')
@@ -21,7 +33,7 @@ function printOneItem(item, dom) {
                     <li> Precio: ${item.price}€</li>`
     texto.append(h3, ul);
     const button = document.createElement('button');
-    button.classList.add("botonCompra");
+    button.classList.add("botonAgregar");
     button.textContent = 'Agregar al carrito';
     const icon = document.createElement('i')
     icon.classList.add("fa-regular", "fa-cart-shopping")
@@ -32,6 +44,7 @@ function printOneItem(item, dom) {
 }
 
 function printAllItems(lista, dom) {
+    dom.innerHTML = "";
     lista.forEach(item => printOneItem(item, dom))
 }
 
