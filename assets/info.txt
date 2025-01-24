@@ -1,0 +1,3 @@
+Falto crear la parte de la paginacion, se me olvido por completo los comit pero te prometo que aprendi la leccion ya que perdi mucho del trabajo que estaba haciendo por el control Z.
+hay imagenes de mas pero por tema tiempo no pude agregar los productos y algunos fondos que descargue para probar.
+el icono en el boton de comprar tenia una funcionalidad que era que en el hover se ocultaba el texto y quedaba solo el icono del carrito lo pude hacer con un html.inner pero me empezo a afectar la funcionalidad del boton ya que no agregaba al carrito decidi quitarla sin embargo en este momento me da miedo quitar el icono aunque se vea mal porque si deja de funcionar me muero, te dejo el github: https://github.com/Kevinb25/practica_js .
